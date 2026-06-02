@@ -4,6 +4,7 @@ Stručný popis príloh
 analyza_vysledkov.py - vstup a výstupy sú definované v hlavičke skriptu
                      - kod na všeobecnú analýzu výsledkov 
 /code
+UNet.txt - základne spúštacie príkazy pre UNet
 run_metacentrum_train_fold_0.pbs
 run_singularity_train_fold_0.sh   - oba tieto skripty na trenovanie modelov na Metacentre máme od https://github.com/tomasvicar/nnunet_metacentrum_example/tree/master
 
