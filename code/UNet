@@ -1,0 +1,5 @@
+Základne prompty pre UNet
+
+nnUNetv2_plan_and_preprocess -d DATASET_ID 
+
+nnUNetv2_train DATASET_ID 3d_fullres 0 -tr TRAINER_NAME -p PLANS_NAME
