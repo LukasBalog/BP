@@ -1,0 +1,19 @@
+{
+  "name": "MyelomaSpine",
+  "description": "CT spine segmentation of myeloma lesions",
+  "tensorImageSize": "3D",
+  "reference": "Bachelor thesis",
+  "licence": "Research use",
+  "release": "1.0",
+  "channel_names": {
+    "0": "VMI_40keV",
+    "1": "Spine_ROI_Mask"
+  },
+  "labels": {
+    "background": 0,
+    "myeloma": 1
+  },
+  "numTraining": 72,
+  "numTest": 0,
+  "file_ending": ".nii.gz"
+}
