@@ -1,28 +1,27 @@
 #!/usr/bin/env python3
 """
-Analyza vysledkov segmentacie podla velkosti lezii
+Analyza vysledkov segmentacie 
 ===================================================
-Skript nacita predikcie zo vsetkych 5 foldov nnUNet cross-validacie.
 
 Predpokladana struktura adresarov:
   RESULTS_DIR/
     fold_0/
       validation/
-        {case}.nii.gz          <- predikcie
-        summary.json           <- nnUNet metriky (case-level)
+        {case}.nii.gz          
+        summary.json           
     fold_1/validation/...
     ...
     fold_4/validation/...
 
   LABELS_DIR/
-    {case}.nii.gz              <- ground truth (labelsTr)
+    {case}.nii.gz              
 
 Vystupy:
   - results_by_lesion.csv            per-lezia analyza
   - summary_by_size.csv              agregat podla velkostnej kategorie
   - summary_by_fold_and_size.csv     fold x kategoria
-  - nnunet_case_summary.csv          case-level metriky z summary.json
-  - figures/                         grafy (neutralne popisky, bez nazvu modelu)
+  - nnunet_case_summary.csv          case-level metriky
+  - figures/                         grafy
 """
 
 # ============================================================
@@ -359,7 +358,7 @@ def summarize_nnunet_by_fold(case_df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ------------------------------------------------------------
-# Vizualizacia -- neutralne popisky (bez nazvu modelu)
+# Vizualizacia 
 # ------------------------------------------------------------
 
 COLORS = {
